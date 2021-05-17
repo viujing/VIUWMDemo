@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 class DetailsViewController: UIViewController {
-    
+    /// property-s
     fileprivate var isTesting = true
-    
+    /// vc actions
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,20 +29,21 @@ class DetailsViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        isTesting = false
+        isTesting = true
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         isTesting = false
         DetailsViewController.cancelPreviousPerformRequests(withTarget: self)
     }
+    /// testing
     @objc fileprivate func testing(){
         if isTesting {
             didBack()
             perform(#selector(testing), with: nil, afterDelay: 5.0)
         }
     }
-    
+    /// event actions
     @objc public func didBack(){
         dismiss(animated: true, completion: nil)
     }
@@ -63,7 +64,7 @@ class DetailsViewController: UIViewController {
         return value_
     }()
     
-    
+    /// focus actions
     override var preferredFocusEnvironments: [UIFocusEnvironment] {
         var focus = [UIFocusEnvironment]()
         focus.append(backButton)

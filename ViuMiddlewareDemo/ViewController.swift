@@ -8,9 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    /// property-s
     fileprivate var isTesting = true
-    
+    /// vc actions
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,12 +26,13 @@ class ViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        isTesting = false
+        isTesting = true
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         isTesting = false
     }
+    /// testing
     @objc fileprivate func testing(){
         if isTesting {
             showDetailsPage()
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
             perform(#selector(testing), with: nil, afterDelay: 5.0)
         }
     }
-    ///
+    /// event actions
     @objc public func showDetailsPage(){
         let result_:UIViewController? = MW().showDetailPage(callback: { (value) in
             print("--->show temp (\(value) )")
@@ -67,7 +68,7 @@ class ViewController: UIViewController {
         return value_
     }()
     
-    
+    /// focus actions
     override var preferredFocusEnvironments: [UIFocusEnvironment] {
         var focus = [UIFocusEnvironment]()
         focus.append(homeButton)

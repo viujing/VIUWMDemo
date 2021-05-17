@@ -13,7 +13,7 @@ class ModuleA_IMPL: NSObject{
     deinit {
         TLog()
     }
-    
+    /// impl actions
     @objc public func showDetailPage(_ params:[AnyHashable:Any]) -> UIViewController{
         /// get callback block and called
         if let callback = params["callback"] as? (String) -> Void {

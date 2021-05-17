@@ -10,6 +10,7 @@ import UIKit
 
 extension ViuMiddleware {
     
+    /// api actions
     public func showDetailPage(callback:@escaping (String) -> Void) -> UIViewController? {
         let params = [
             "callback":callback,
