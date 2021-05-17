@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0FDC19526520E0700153447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDC19426520E0700153447 /* AppDelegate.swift */; };
+		E0FDC19726520E0700153447 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDC19626520E0700153447 /* ViewController.swift */; };
+		E0FDC19A26520E0700153447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0FDC19826520E0700153447 /* Main.storyboard */; };
+		E0FDC19C26520E0800153447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0FDC19B26520E0800153447 /* Assets.xcassets */; };
+		E0FDC19F26520E0800153447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0FDC19D26520E0800153447 /* LaunchScreen.storyboard */; };
+		E0FDC1AA26520E0800153447 /* ViuMiddlewareDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDC1A926520E0800153447 /* ViuMiddlewareDemoTests.swift */; };
+		E0FDC1B526520E0800153447 /* ViuMiddlewareDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDC1B426520E0800153447 /* ViuMiddlewareDemoUITests.swift */; };
+		E0FDC1EB2652110000153447 /* ModuleA_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDC1EA2652110000153447 /* ModuleA_API.swift */; };
+		E0FDC1ED2652111500153447 /* ModuleA_IMPL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDC1EC2652111500153447 /* ModuleA_IMPL.swift */; };
+		E0FDC1F1265211B200153447 /* ModuleBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDC1F0265211B200153447 /* ModuleBase.swift */; };
+		E0FDC1FA26521DB900153447 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDC1F926521DB900153447 /* DetailsViewController.swift */; };
+		E0FDC2042652432200153447 /* libViuMiddleware.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FDC2012652430F00153447 /* libViuMiddleware.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0FDC1A626520E0800153447 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0FDC18926520E0700153447 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0FDC19026520E0700153447;
+			remoteInfo = ViuMiddlewareDemo;
+		};
+		E0FDC1B126520E0800153447 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0FDC18926520E0700153447 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0FDC19026520E0700153447;
+			remoteInfo = ViuMiddlewareDemo;
+		};
+		E0FDC2002652430F00153447 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0FDC1FC2652430F00153447 /* ViuMiddleware.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E0FDC1CB26520F3800153447;
+			remoteInfo = ViuMiddleware;
+		};
+		E0FDC2022652431C00153447 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0FDC1FC2652430F00153447 /* ViuMiddleware.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E0FDC1CA26520F3800153447;
+			remoteInfo = ViuMiddleware;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0FDC19126520E0700153447 /* ViuMiddlewareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViuMiddlewareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FDC19426520E0700153447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0FDC19626520E0700153447 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0FDC19926520E0700153447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0FDC19B26520E0800153447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0FDC19E26520E0800153447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0FDC1A026520E0800153447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0FDC1A526520E0800153447 /* ViuMiddlewareDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViuMiddlewareDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FDC1A926520E0800153447 /* ViuMiddlewareDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViuMiddlewareDemoTests.swift; sourceTree = "<group>"; };
+		E0FDC1AB26520E0800153447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0FDC1B026520E0800153447 /* ViuMiddlewareDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViuMiddlewareDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FDC1B426520E0800153447 /* ViuMiddlewareDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViuMiddlewareDemoUITests.swift; sourceTree = "<group>"; };
+		E0FDC1B626520E0800153447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0FDC1E52652107E00153447 /* ViuMiddlewareDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViuMiddlewareDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E0FDC1EA2652110000153447 /* ModuleA_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleA_API.swift; sourceTree = "<group>"; };
+		E0FDC1EC2652111500153447 /* ModuleA_IMPL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleA_IMPL.swift; sourceTree = "<group>"; };
+		E0FDC1F0265211B200153447 /* ModuleBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBase.swift; sourceTree = "<group>"; };
+		E0FDC1F926521DB900153447 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E0FDC1FC2652430F00153447 /* ViuMiddleware.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ViuMiddleware.xcodeproj; path = ../VIUMW/ViuMiddleware.xcodeproj; sourceTree = "<group>"; };
+		E0FDC2052652433D00153447 /* ViuMiddleware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViuMiddleware.h; path = ../../../VIUMW/ViuMiddleware/ViuMiddleware.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0FDC18E26520E0700153447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0FDC2042652432200153447 /* libViuMiddleware.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FDC1A226520E0800153447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FDC1AD26520E0800153447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0FDC18826520E0700153447 = {
+			isa = PBXGroup;
+			children = (
+				E0FDC1FC2652430F00153447 /* ViuMiddleware.xcodeproj */,
+				E0FDC19326520E0700153447 /* ViuMiddlewareDemo */,
+				E0FDC1A826520E0800153447 /* ViuMiddlewareDemoTests */,
+				E0FDC1B326520E0800153447 /* ViuMiddlewareDemoUITests */,
+				E0FDC19226520E0700153447 /* Products */,
+				E0FDC1F42652134C00153447 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0FDC19226520E0700153447 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDC19126520E0700153447 /* ViuMiddlewareDemo.app */,
+				E0FDC1A526520E0800153447 /* ViuMiddlewareDemoTests.xctest */,
+				E0FDC1B026520E0800153447 /* ViuMiddlewareDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0FDC19326520E0700153447 /* ViuMiddlewareDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDC19426520E0700153447 /* AppDelegate.swift */,
+				E0FDC19626520E0700153447 /* ViewController.swift */,
+				E0FDC1F926521DB900153447 /* DetailsViewController.swift */,
+				E0FDC1E42652105D00153447 /* ModuleA_IMPL */,
+				E0FDC1E32652102C00153447 /* ModuleA_API */,
+				E0FDC1EF2652119100153447 /* ModuleBase_API */,
+				E0FDC1E026520FE900153447 /* ViuMiddleware */,
+				E0FDC19826520E0700153447 /* Main.storyboard */,
+				E0FDC19B26520E0800153447 /* Assets.xcassets */,
+				E0FDC19D26520E0800153447 /* LaunchScreen.storyboard */,
+				E0FDC1A026520E0800153447 /* Info.plist */,
+			);
+			path = ViuMiddlewareDemo;
+			sourceTree = "<group>";
+		};
+		E0FDC1A826520E0800153447 /* ViuMiddlewareDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDC1A926520E0800153447 /* ViuMiddlewareDemoTests.swift */,
+				E0FDC1AB26520E0800153447 /* Info.plist */,
+			);
+			path = ViuMiddlewareDemoTests;
+			sourceTree = "<group>";
+		};
+		E0FDC1B326520E0800153447 /* ViuMiddlewareDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDC1B426520E0800153447 /* ViuMiddlewareDemoUITests.swift */,
+				E0FDC1B626520E0800153447 /* Info.plist */,
+			);
+			path = ViuMiddlewareDemoUITests;
+			sourceTree = "<group>";
+		};
+		E0FDC1E026520FE900153447 /* ViuMiddleware */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDC2052652433D00153447 /* ViuMiddleware.h */,
+				E0FDC1E52652107E00153447 /* ViuMiddlewareDemo-Bridging-Header.h */,
+			);
+			path = ViuMiddleware;
+			sourceTree = "<group>";
+		};
+		E0FDC1E32652102C00153447 /* ModuleA_API */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDC1EA2652110000153447 /* ModuleA_API.swift */,
+			);
+			path = ModuleA_API;
+			sourceTree = "<group>";
+		};
+		E0FDC1E42652105D00153447 /* ModuleA_IMPL */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDC1EC2652111500153447 /* ModuleA_IMPL.swift */,
+			);
+			path = ModuleA_IMPL;
+			sourceTree = "<group>";
+		};
+		E0FDC1EF2652119100153447 /* ModuleBase_API */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDC1F0265211B200153447 /* ModuleBase.swift */,
+			);
+			path = ModuleBase_API;
+			sourceTree = "<group>";
+		};
+		E0FDC1F42652134C00153447 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0FDC1FD2652430F00153447 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0FDC2012652430F00153447 /* libViuMiddleware.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0FDC19026520E0700153447 /* ViuMiddlewareDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0FDC1B926520E0800153447 /* Build configuration list for PBXNativeTarget "ViuMiddlewareDemo" */;
+			buildPhases = (
+				E0FDC18D26520E0700153447 /* Sources */,
+				E0FDC18E26520E0700153447 /* Frameworks */,
+				E0FDC18F26520E0700153447 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0FDC2032652431C00153447 /* PBXTargetDependency */,
+			);
+			name = ViuMiddlewareDemo;
+			productName = ViuMiddlewareDemo;
+			productReference = E0FDC19126520E0700153447 /* ViuMiddlewareDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0FDC1A426520E0800153447 /* ViuMiddlewareDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0FDC1BC26520E0800153447 /* Build configuration list for PBXNativeTarget "ViuMiddlewareDemoTests" */;
+			buildPhases = (
+				E0FDC1A126520E0800153447 /* Sources */,
+				E0FDC1A226520E0800153447 /* Frameworks */,
+				E0FDC1A326520E0800153447 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0FDC1A726520E0800153447 /* PBXTargetDependency */,
+			);
+			name = ViuMiddlewareDemoTests;
+			productName = ViuMiddlewareDemoTests;
+			productReference = E0FDC1A526520E0800153447 /* ViuMiddlewareDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0FDC1AF26520E0800153447 /* ViuMiddlewareDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0FDC1BF26520E0800153447 /* Build configuration list for PBXNativeTarget "ViuMiddlewareDemoUITests" */;
+			buildPhases = (
+				E0FDC1AC26520E0800153447 /* Sources */,
+				E0FDC1AD26520E0800153447 /* Frameworks */,
+				E0FDC1AE26520E0800153447 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0FDC1B226520E0800153447 /* PBXTargetDependency */,
+			);
+			name = ViuMiddlewareDemoUITests;
+			productName = ViuMiddlewareDemoUITests;
+			productReference = E0FDC1B026520E0800153447 /* ViuMiddlewareDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0FDC18926520E0700153447 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E0FDC19026520E0700153447 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					E0FDC1A426520E0800153447 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = E0FDC19026520E0700153447;
+					};
+					E0FDC1AF26520E0800153447 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = E0FDC19026520E0700153447;
+					};
+				};
+			};
+			buildConfigurationList = E0FDC18C26520E0700153447 /* Build configuration list for PBXProject "ViuMiddlewareDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0FDC18826520E0700153447;
+			productRefGroup = E0FDC19226520E0700153447 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E0FDC1FD2652430F00153447 /* Products */;
+					ProjectRef = E0FDC1FC2652430F00153447 /* ViuMiddleware.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E0FDC19026520E0700153447 /* ViuMiddlewareDemo */,
+				E0FDC1A426520E0800153447 /* ViuMiddlewareDemoTests */,
+				E0FDC1AF26520E0800153447 /* ViuMiddlewareDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E0FDC2012652430F00153447 /* libViuMiddleware.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libViuMiddleware.a;
+			remoteRef = E0FDC2002652430F00153447 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0FDC18F26520E0700153447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0FDC19F26520E0800153447 /* LaunchScreen.storyboard in Resources */,
+				E0FDC19C26520E0800153447 /* Assets.xcassets in Resources */,
+				E0FDC19A26520E0700153447 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FDC1A326520E0800153447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FDC1AE26520E0800153447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0FDC18D26520E0700153447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0FDC19726520E0700153447 /* ViewController.swift in Sources */,
+				E0FDC1F1265211B200153447 /* ModuleBase.swift in Sources */,
+				E0FDC1ED2652111500153447 /* ModuleA_IMPL.swift in Sources */,
+				E0FDC1FA26521DB900153447 /* DetailsViewController.swift in Sources */,
+				E0FDC1EB2652110000153447 /* ModuleA_API.swift in Sources */,
+				E0FDC19526520E0700153447 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FDC1A126520E0800153447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0FDC1AA26520E0800153447 /* ViuMiddlewareDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0FDC1AC26520E0800153447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0FDC1B526520E0800153447 /* ViuMiddlewareDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0FDC1A726520E0800153447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0FDC19026520E0700153447 /* ViuMiddlewareDemo */;
+			targetProxy = E0FDC1A626520E0800153447 /* PBXContainerItemProxy */;
+		};
+		E0FDC1B226520E0800153447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0FDC19026520E0700153447 /* ViuMiddlewareDemo */;
+			targetProxy = E0FDC1B126520E0800153447 /* PBXContainerItemProxy */;
+		};
+		E0FDC2032652431C00153447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViuMiddleware;
+			targetProxy = E0FDC2022652431C00153447 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0FDC19826520E0700153447 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0FDC19926520E0700153447 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0FDC19D26520E0800153447 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0FDC19E26520E0800153447 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0FDC1B726520E0800153447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+			};
+			name = Debug;
+		};
+		E0FDC1B826520E0800153447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0FDC1BA26520E0800153447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLN2356L2A;
+				INFOPLIST_FILE = ViuMiddlewareDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JNWHYJ.ViuMiddlewareDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ViuMiddlewareDemo/ViuMiddleware/ViuMiddlewareDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		E0FDC1BB26520E0800153447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLN2356L2A;
+				INFOPLIST_FILE = ViuMiddlewareDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JNWHYJ.ViuMiddlewareDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ViuMiddlewareDemo/ViuMiddleware/ViuMiddlewareDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		E0FDC1BD26520E0800153447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLN2356L2A;
+				INFOPLIST_FILE = ViuMiddlewareDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JNWHYJ.ViuMiddlewareDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViuMiddlewareDemo.app/ViuMiddlewareDemo";
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+			};
+			name = Debug;
+		};
+		E0FDC1BE26520E0800153447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLN2356L2A;
+				INFOPLIST_FILE = ViuMiddlewareDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JNWHYJ.ViuMiddlewareDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViuMiddlewareDemo.app/ViuMiddlewareDemo";
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+			};
+			name = Release;
+		};
+		E0FDC1C026520E0800153447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLN2356L2A;
+				INFOPLIST_FILE = ViuMiddlewareDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JNWHYJ.ViuMiddlewareDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = ViuMiddlewareDemo;
+			};
+			name = Debug;
+		};
+		E0FDC1C126520E0800153447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLN2356L2A;
+				INFOPLIST_FILE = ViuMiddlewareDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JNWHYJ.ViuMiddlewareDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = ViuMiddlewareDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0FDC18C26520E0700153447 /* Build configuration list for PBXProject "ViuMiddlewareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0FDC1B726520E0800153447 /* Debug */,
+				E0FDC1B826520E0800153447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0FDC1B926520E0800153447 /* Build configuration list for PBXNativeTarget "ViuMiddlewareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0FDC1BA26520E0800153447 /* Debug */,
+				E0FDC1BB26520E0800153447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0FDC1BC26520E0800153447 /* Build configuration list for PBXNativeTarget "ViuMiddlewareDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0FDC1BD26520E0800153447 /* Debug */,
+				E0FDC1BE26520E0800153447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0FDC1BF26520E0800153447 /* Build configuration list for PBXNativeTarget "ViuMiddlewareDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0FDC1C026520E0800153447 /* Debug */,
+				E0FDC1C126520E0800153447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0FDC18926520E0700153447 /* Project object */;
+}
